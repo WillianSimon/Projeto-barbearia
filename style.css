@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #161616;
+    box-shadow: 0px 3px 10px #464646;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 120px;
+    background-attachment: fixed;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item, .nav-item-divisao, .nav-item-redes-sociais {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.nav-item:hover {
+    background-color: #464646;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+.divisao{
+    width: 1px;
+    height: 40px;
+    background-color: #ffffff;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+    font-family: Belleza, sans-serif;
+}
+
+.icon{
+    width: 60%;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    
+    .nav-bar {
+        padding: 1.5rem 0rem;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .mobile-menu-icon > button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50px;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding: 0.5rem;
+    }
+
+    .mobile-menu .nav-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-menu .divisao{
+        width: 200px;
+        height: 1px;
+        background-color: #ffffff;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .icones{
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .open {
+        display: block;
+    }
+
+    .linha{
+        width: 110vw;
+        height: 5px;
+        background-color: white;
+    }
+}
+main .video-principal{
+    width: 100vw;
+}
+
+
+
+
+
